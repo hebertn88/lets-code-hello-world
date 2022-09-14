@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88af4a96-04f7-41e1-b9eb-cc0b6ad42a2c" name="Changes" comment="Aula 03 - Variaveis">
+    <list default="true" id="88af4a96-04f7-41e1-b9eb-cc0b6ad42a2c" name="Changes" comment="AULA 05 - ESTRUTURAS CONDICIONAIS">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -25,12 +25,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -61,7 +61,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662903725633</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="AULA 05 - ESTRUTURAS CONDICIONAIS">
+      <created>1663033469334</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1663033469334</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -77,6 +84,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Aula 03 - Variaveis" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aula 03 - Variaveis" />
+    <MESSAGE value="AULA 05 - ESTRUTURAS CONDICIONAIS" />
+    <option name="LAST_COMMIT_MESSAGE" value="AULA 05 - ESTRUTURAS CONDICIONAIS" />
   </component>
 </project>

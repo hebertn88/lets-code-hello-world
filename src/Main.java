@@ -1,5 +1,10 @@
 import org.w3c.dom.ls.LSOutput;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.TextStyle;
+import java.util.Locale;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -62,19 +67,19 @@ public class Main {
         // ----------------------------------------------------------
         // AULA 05 - ESTRUTURAS CONDICIONAIS
         // ----------------------------------------------------------
-
+        /*
         int nota = -2;
 
         //se nota maior ou igual a 70, aluno esta aprovado
         //if-else
 
-        /*
+        *//*
         if (nota >= 70) {
             System.out.println("Aluno Aprovado!");
         } else {
             System.out.println("Não aprovado!");
         }
-        */
+        *//*
 
         String graduacao;
         // A 80, B 70, C 60, D 0
@@ -107,7 +112,44 @@ public class Main {
             default:
                 System.out.println("Graduação inválida!");
         }
+        */
 
+        // ----------------------------------------------------------
+        // AULA 06 - MANIPULAÇÃO DE STRINGS E DATAS
+        // ----------------------------------------------------------
 
+        /*
+        String nome = "Hebert";
+        System.out.println(nome.toUpperCase()); // converte para MAIÚSCULAS
+        System.out.println(nome.toLowerCase()); // converte para minúsculas
+        System.out.println(nome.length()); // retorna tamanho
+
+        String nomeOutro = "hebert";
+        System.out.println(nome.equals(nomeOutro)); // compara strings
+        System.out.println(nome.equalsIgnoreCase(nomeOutro)); //compara strings ignorando maiusc/min
+        */
+
+        //Objetivo:
+        //imprimir msg "Olá, {nome}. Hoje é {diaDaSemana}, {SAUDACAO}!
+
+        String nome = "Hebert";
+        LocalDate hoje = LocalDate.now();
+        Locale brasil = new Locale("pt","BR");
+        //System.out.println(hoje.getDayOfWeek().getDisplayName(TextStyle.FULL, brasil));
+        String diaDaSemana = hoje.getDayOfWeek().getDisplayName(TextStyle.FULL, brasil);
+
+        LocalDateTime agora = LocalDateTime.now();
+        String saudacao;
+        if (agora.getHour() >= 0 && agora.getHour() < 12) {
+            saudacao = "bom dia!";
+        } else if (agora.getHour() >= 12 && agora.getHour() < 18) {
+            saudacao = "boa tarde!";
+        } else if (agora.getHour() >= 18 && agora.getHour() < 24) {
+            saudacao = "boa noite!";
+        } else {
+            saudacao = "bem vindo!";
+        }
+
+        System.out.printf("Olá, %s. Hoje é %s, %s%n", nome, diaDaSemana, saudacao.toUpperCase());
     }
 }
