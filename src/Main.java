@@ -129,13 +129,13 @@ public class Main {
         System.out.println(nome.equalsIgnoreCase(nomeOutro)); //compara strings ignorando maiusc/min
         */
 
+        /*
         //Objetivo:
         //imprimir msg "Olá, {nome}. Hoje é {diaDaSemana}, {SAUDACAO}!
 
         String nome = "Hebert";
         LocalDate hoje = LocalDate.now();
         Locale brasil = new Locale("pt","BR");
-        //System.out.println(hoje.getDayOfWeek().getDisplayName(TextStyle.FULL, brasil));
         String diaDaSemana = hoje.getDayOfWeek().getDisplayName(TextStyle.FULL, brasil);
 
         LocalDateTime agora = LocalDateTime.now();
@@ -151,5 +151,78 @@ public class Main {
         }
 
         System.out.printf("Olá, %s. Hoje é %s, %s%n", nome, diaDaSemana, saudacao.toUpperCase());
+        */
+
+        // ----------------------------------------------------------
+        // AULA 07 - LAÇOS NUMÉRICOS
+        // ----------------------------------------------------------
+
+        /*
+        // Criação tabuada
+
+        //variavel de controle; condicao de parada; incremento
+        for (int i = 1; i <= 10; i++) {
+            for (int j = 1; j <= 10; j++) {
+                if (j < 10)
+                    System.out.printf("%s X %s = %s%n", j,i, j*i);
+                else //se for 10 pula uma linha a mais
+                    System.out.printf("%s X %s = %s%n%n", j,i, j*i);
+
+            }
+        }
+        */
+
+        // ----------------------------------------------------------
+        // AULA 08 - VETORES
+        // ----------------------------------------------------------
+
+        /*
+        int[] numeros = { 2,5,10,1,3};
+
+        int maior = numeros[0];
+        int menor = numeros[0];
+        int soma = numeros[0];
+
+        for (int i = 1; i < numeros.length; i++) {
+            if (numeros[i] > maior)
+                maior = numeros[i];
+
+            if (numeros[i] < menor)
+                menor = numeros[i];
+
+            soma += numeros[i];
+        }
+
+        System.out.printf("O maior número é %s%n",maior);
+        System.out.printf("O menor número é %s%n", menor);
+        System.out.printf("A média dos números é %s%n", (float) soma / numeros.length);
+        */
+
+        // ----------------------------------------------------------
+        // AULA 09 - FUNÇÕES
+        // ----------------------------------------------------------
+
+        String nome = "Hebert";
+        saudacao(nome);
+        saudacao();
+
+        System.out.println(soma(2,3));
+
+        int num1 = 7;
+        int num2 = 3;
+        System.out.printf("%s + %s = %s", num1, num2, soma(num1, num2));
+    }
+
+    public static void saudacao(String nome) {
+        System.out.printf("Olá, %s!%n", nome);
+    }
+
+    //sobrecarga de metodos (parametros opcionais)
+    public static void saudacao() {
+        System.out.println("Olá, amigo!");
+    }
+
+    public static int soma(int a, int b) {
+        return a + b;
     }
 }
